@@ -2,7 +2,6 @@ package DSALab2Tasks;
 import java.util.Arrays;
 
 public class ContactApp {
-
     private String[] contacts = {"Aaron","Berkley","Charlotte","Dylan","Ella"};
     private String[] number = {"0968965672","223615371","031987213","1231232134","321312315"};
     public void menu(){

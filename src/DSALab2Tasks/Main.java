@@ -38,8 +38,9 @@ public class Main {
         }
 */
 
-        int i ;
-        ContactApp c= new ContactApp();
+        int i;
+        ContactApp c = new ContactApp();
+
         while(true){
             c.menu();
             System.out.println("Enter the option: ");
