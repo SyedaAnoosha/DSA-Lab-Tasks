@@ -61,21 +61,22 @@ public class ContactApp {
         }
         System.out.println(Arrays.toString(contacts));
     }
-    public void delete_contact(String name, String num){
+    public void delete_contact(String name){
 
         String[] newName = new String[contacts.length - 1];
-        String[] newNum = new String[number.length - 1];
+        //String[] newNum = new String[number.length - 1];
 
         for (int i = 0 , k = 0; i < contacts.length; i++) {
             if(!name.equals(contacts[i])){
                 newName[k]=contacts[i];
             }
         }
+        System.out.println(Arrays.toString(newName));
 
-        for (int i = 0 , k = 0; i < number.length; i++) {
+        /*for (int i = 0 , k = 0; i < number.length; i++) {
             if(!num.equals(number[i])){
                 newNum[k]=number[i];
             }
-        }
+        }*/
     }
 }

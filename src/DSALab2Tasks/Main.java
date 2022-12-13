@@ -40,10 +40,9 @@ public class Main {
 
         int i ;
         ContactApp c= new ContactApp();
-        c.menu();
-        System.out.println("Enter the option: ");
-
         while(true){
+            c.menu();
+            System.out.println("Enter the option: ");
             i = sc.nextInt();
             if (i == 1) {
                 c.display_contacts();
@@ -60,13 +59,15 @@ public class Main {
                 String num = sc.nextLine();
                 c.add_contact(pos,name,num);
             } else if (i == 4) {
-                System.out.print("Enter name you want to replace: ");
+                System.out.println("Enter name you want to replace: ");
                 String name1= sc.nextLine();
-                System.out.print("Enter name you want to replace with it: ");
+                System.out.println("Enter name you want to replace with it: ");
                 String name2 = sc.nextLine();
                 c.update_contacts(name1,name2);
             } else if (i == 5) {
-                System.out.println(i);
+                System.out.println("Name you want  to delete: ");
+                String del = sc.nextLine();
+                c.delete_contact(del);
             } else if (i == 6) {
                 System.exit(0);
             }
