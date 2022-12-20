@@ -1,6 +1,6 @@
 package DSALab3Tasks;
 
-public class SearchingAlgos {
+public class SearchingAlgos{
     public void LinearSearch1D(int[] A, int key){
         for (int i = 0; i < A.length; i++) {
             if(key==A[i]){
