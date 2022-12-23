@@ -23,11 +23,12 @@ public class SearchingAlgos{
     public void BinarySearch1D(int[] A, int key, int first, int last){
         int mid = (first + last)/2;
         while( first <= last ){
-            if ( A[mid] < key ){
-                first = mid + 1;
-            }else if ( A[mid] == key ){
+            if (A[mid] == key ){
                 System.out.println(key+" is found at index: " + mid);
                 break;
+            }
+            if ( A[mid] < key ){
+                first = mid + 1;
             }else{
                 last = mid - 1;
             }
