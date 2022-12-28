@@ -1,6 +1,7 @@
 package DSALab1Tasks;
 public class Main {
     public static void main(String[] args) {
+
         Employee E = new Employee();
         E.employee();
 
@@ -11,5 +12,6 @@ public class Main {
         obj.ticket();
         obj.empSal();
         obj.mcq();
+
     }
 }

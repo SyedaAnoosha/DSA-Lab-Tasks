@@ -2,6 +2,7 @@ package DSALab1Tasks;
 
 public class Employee {
     public void employee(){
+        System.out.println("Task : 1 ");
         int age=29;
         System.out.println(age);
         boolean isAManager= true;
@@ -15,6 +16,6 @@ public class Employee {
         double firstBonus=10.00,secondBonus=22.00,thirdBonus=35.00;
         double sum=firstBonus+secondBonus+thirdBonus;
         System.out.println(sum);
-
+        System.out.println();
     }
 }

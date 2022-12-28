@@ -1,5 +1,4 @@
 package DSALab1Tasks;
-
 import java.util.ArrayList;
 
 public class MenuBuilder {
