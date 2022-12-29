@@ -39,17 +39,17 @@ public class SearchingAlgos{
         }
     }
     public void BinarySearch2D(int[][] B,int key){
-        int row = 0;
-        int col = B[row].length - 1;
-        while (row < B.length && col >= 0) {
-            if (B[row][col] == key) {
-                System.out.println(key+ " found at: "+row +":"+ col);
+        int r = 0;
+        int c = B[r].length - 1;
+        while (r < B.length && c >= 0) {
+            if (B[r][c] == key) {
+                System.out.println(key+ " found at: ["+r +":"+ c+"]");
             }
-            if (B[row][col] < key) {
-                row++;
+            if (B[r][c] < key) {
+                r++;
             }
             else {
-                col--;
+                c--;
             }
         }
 

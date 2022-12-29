@@ -12,21 +12,26 @@ public class Main {
         long before1 = System.nanoTime();
         s.LinearSearch1D(A, key);
         long after1 = System.nanoTime();
-        System.out.println("Execution time of LinearSearch1D method is : " + (after1 - before1));
+
 
         long before2 = System.nanoTime();
         s.LinearSearch2D(B, key2);
         long after2 = System.nanoTime();
-        System.out.println("Execution time of LinearSearch2D method is : " + (after2 - before2));
 
         long before = System.nanoTime();
         s.BinarySearch1D(A, key, 0, A.length - 1);
         long after = System.nanoTime();
-        System.out.println("Execution time of BinarySearch1D method is : " + (after - before));
 
         long before2D = System.nanoTime();
         s.BinarySearch2D(B, key2);
         long after2D = System.nanoTime();
-        System.out.println("Execution time of BinarySearch2D method is : " + (after2D - before2D));
+        System.out.println();
+
+        System.out.println("Execution time of LinearSearch1D is : " + (after1 - before1));
+        System.out.println("Execution time of LinearSearch2D is : " + (after2 - before2));
+        System.out.println("Execution time of BinarySearch1D is : " + (after - before));
+        System.out.println("Execution time of BinarySearch2D is : " + (after2D - before2D));
+
+
     }
 }
