@@ -18,10 +18,10 @@ public class Lab1 {
     public void mcq(){
         System.out.println("TASK # 3");
         String Ques="What is Iran's capital?";
-        String choice1="Tehran", choice2="Baghdad";
+        String choice1="Tehran", choice2="Baghdad", choice3="syria";
         String correctAns=choice1;
         System.out.println(Ques);
-        System.out.println(">) "+choice1+"  >)"+choice2);
+        System.out.println(">) "+choice1+"  >)"+choice2+"  >)"+choice3);
         Scanner scanner= new Scanner(System.in);
         String answer=scanner.nextLine();
         if(answer.equalsIgnoreCase(correctAns)){
