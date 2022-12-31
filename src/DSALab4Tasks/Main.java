@@ -23,7 +23,7 @@ public class Main {
 
         System.out.println("\nQuick Sort:");
         long beforeQ = System.nanoTime();
-        s.QuickSort1D(heights);
+        s.QuickSort1D(heights,0,heights.length-1);
         long afterQ = System.nanoTime();
 
         System.out.println();

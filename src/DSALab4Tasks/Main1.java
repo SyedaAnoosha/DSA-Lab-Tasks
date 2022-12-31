@@ -1,5 +1,7 @@
 package DSALab4Tasks;
 
+import java.util.Arrays;
+
 public class Main1 {
     public static void main(String[] args) {
 
@@ -28,7 +30,8 @@ public class Main1 {
 
         System.out.println("\nQuick Sort:");
         long beforeQ = System.nanoTime();
-        s.QuickSort1D(heightQ);
+        s.QuickSort1D(heightQ,0, heightQ.length-1);
+        System.out.println(Arrays.toString(heightQ));
         long afterQ = System.nanoTime();
 
         System.out.println();

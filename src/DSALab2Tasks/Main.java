@@ -7,8 +7,11 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int i;
         ContactApp c = new ContactApp();
+        c.display_contacts();
+        c.search_contacts("Aaron");
+        c.add_contact(3,"flex","23443");
 
-        while(true){
+        /*while(true){
             c.menu();
             System.out.println("Enter the option: ");
             i = sc.nextInt();
@@ -40,9 +43,9 @@ public class Main {
                 System.exit(0);
             }
         }
+*/
 
-
-        /* int[] numArr={2,3,4,5};
+/* int[] numArr={2,3,4,5};
         Lab2 a = new Lab2();
         a.arrInput();
         a.arrSearch(numArr);
