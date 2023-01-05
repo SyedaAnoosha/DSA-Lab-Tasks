@@ -1,4 +1,4 @@
-package DSALab2Tasks;
+package Lab3;
 
 import java.util.Scanner;
 
@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int i;
-        ContactApp c = new ContactApp();
+        COntact c = new COntact();
         c.display_contacts();
         c.search_contacts("Aaron");
         c.add_contact(3,"flex","23443");

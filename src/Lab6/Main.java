@@ -1,11 +1,14 @@
-package DSALab4Tasks;
+package Lab6;
 
 import java.util.Arrays;
 
-public class Main1 {
+public class Main {
     public static void main(String[] args) {
 
-        //declared different arrays for every  because after bubble sorting the array will already become sorted.
+        //declared different arrays for every sorting technique because after bubble sorting the array
+        // will become sorted and as a parameter to different functions, the already sorted array is passed.
+
+
         int[] heightS={180,165,150,170,145};
         int[] heightB={180,165,150,170,145};
         int[] heightI={180,165,150,170,145};
@@ -39,5 +42,10 @@ public class Main1 {
         System.out.println("Time took by selection sort : "+(afterS-beforeS));
         System.out.println("Time took by insertion sort : "+(afterI-beforeI));
         System.out.println("Time took by quick sort : "+(afterQ-beforeQ));
+        System.out.println();
+
+        int[][] arrB = { { 2,0,15 } , { 5,1,3 } , { 6,9,4 } };
+        s.SelectionSort2D(arrB);
+        //s.BubbleSort2D(arrB);
     }
 }

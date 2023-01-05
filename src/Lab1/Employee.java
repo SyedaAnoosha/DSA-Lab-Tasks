@@ -1,4 +1,4 @@
-package DSALab1Tasks;
+package Lab1;
 
 public class Employee {
     public void employee(){

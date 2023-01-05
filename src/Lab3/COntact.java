@@ -1,8 +1,8 @@
-package DSALab2Tasks;
+package Lab3;
 
 import java.util.Arrays;
 
-public class ContactApp {
+public class COntact {
     private String[][] contacts = {{"Aaron", "0968965672"}, {"Berkley", "223615371"}, {"Charlotte", "031987213"}, {"Dylan", "1231232134"}, {"Ella", "321312315"}};
 
     public void menu() {

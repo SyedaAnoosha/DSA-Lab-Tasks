@@ -1,4 +1,4 @@
-package DSALab4Tasks;
+package Lab6;
 import java.util.Arrays;
 
 public class Sorting_algos {
@@ -31,6 +31,7 @@ public class Sorting_algos {
         }
         System.out.println(Arrays.toString(A));
     }
+
     public void InsertionSort1D(int[] A){
         for (int i = 1; i < A.length ; i++) {
             int temp=A[i];
@@ -85,5 +86,44 @@ public class Sorting_algos {
             QuickSort1D(A,low,pivot_index-1);
             QuickSort1D(A,pivot_index+1,high);
         }
+    }
+
+    public void BubbleSort2D(int[][] A){
+
+        int temp;
+        for (int i = 0; i < A.length; i++) {
+            for (int j = 0; j < A[i].length - 1; j++) {
+                for (int k = 0; k < A[i].length - 1 - j; k++) {
+                    if (A[i][k] > A[i][k + 1]) {
+                        temp = A[i][k];
+                        A[i][k] = A[i][k + 1];
+                        A[i][k + 1] = temp;
+                    }
+                }
+
+            }
+        }
+        System.out.println(Arrays.deepToString(A));
+    }
+
+    public void SelectionSort2D(int[][] A){
+        int temp,min;
+
+        for (int i = 0; i < A.length ; i++) {
+            for (int j = i+1; j < A[i].length; j++) {
+                for (int k = 0; k < A.length-1 ; k++) {
+                    min=i;
+                    for (int l = k+1; l < A.length; l++) {
+                        if(A[i][j]<A[i][min]){
+                            min=j;
+                        }
+                    }
+                    temp=A[i][k];
+                    A[i][k]=A[i][min];
+                    A[i][min]=temp;
+                }
+            }
+        }
+        System.out.println(Arrays.toString(A));
     }
 }

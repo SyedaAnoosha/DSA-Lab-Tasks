@@ -1,4 +1,4 @@
-package DSALab2Tasks;
+package Lab3;
 
 import java.util.Scanner;
 

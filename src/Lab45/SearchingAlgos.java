@@ -1,4 +1,4 @@
-package DSALab3Tasks;
+package Lab45;
 
 public class SearchingAlgos{
     public void LinearSearch1D(int[] A, int key){
