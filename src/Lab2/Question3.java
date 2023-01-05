@@ -1,10 +1,13 @@
 package Lab2;
 
 public class Question3 {
-    public static void main(String [] arug)
-    {
+    public static void main(String [] args) {
         Invoice i1=new Invoice();
-        i1.setDetails("AED76552", 30, "Milk", 22);
+        i1.setNumber("AED76552");
+        i1.setDescription("Milk");
+        i1.setPrice(30);
+        i1.setQuantity(22);
+
         System.out.println(i1.getInvoiceAmount());
 
     }
@@ -16,30 +19,39 @@ class Invoice{
     String description;
     float price;
 
-    void setDetails(String number, int quantity, String des, float price)
-    {
-        this.number=number;
-        this.quantity=quantity;
-        this.description=des;
-        this.price=price;
-    }
-    String getnumber()
-    {
+    public String getNumber() {
         return number;
     }
-    int getqty()
-    {
+
+    public void setNumber(String number) {
+        this.number = number;
+    }
+
+    public int getQuantity() {
         return quantity;
     }
-    String getdes()
-    {
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
+    public String getDescription() {
         return description;
     }
-    float getprice()
-    {
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public float getPrice() {
         return price;
     }
-    float getInvoiceAmount()
+
+    public void setPrice(float price) {
+        this.price = price;
+    }
+
+    public float getInvoiceAmount()
     {
         if(quantity<=0 || price<=0)
         {

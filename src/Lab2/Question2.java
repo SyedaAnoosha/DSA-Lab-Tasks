@@ -11,8 +11,8 @@ public class Question2 {
         eee.setFirst("Sara");
         eee.setLast("ali");
         eee.setSalary(400);
-        System.out.println("Yearly salary before increment"+ eee.yearlysalrybefore());
-        System.out.println("Yearly salary after increment"+ eee.afterIncrement());
+        System.out.println("Yearly salary before increment : "+ eee.yearlysalrybefore());
+        System.out.println("Yearly salary after increment : "+ eee.afterIncrement());
 
     }
 }
