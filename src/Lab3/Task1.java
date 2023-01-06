@@ -69,6 +69,14 @@ class ContactApp{
         }else System.out.println("Contact not found!");
     }
 
+    public void menu(){
+        System.out.println("1. Display all contacts");
+        System.out.println("2. Search a contact");
+        System.out.println("3. Add a new contact");
+        System.out.println("4. Update a contact");
+        System.out.println("5. Delete a contact");
+    }
+
 }
 public class Task1 {
     public static void main(String[] args) {
@@ -88,7 +96,45 @@ public class Task1 {
         contactApp.contacts[4][1]="4444444";
 
 
-        contactApp.displayAllContacts();
+        int n=10;
 
+        System.out.println("Enter your choice: ");
+
+        while(n!=0){
+            contactApp.menu();
+            n= scanner.nextInt();
+            switch (n){
+                case 1 :{
+                    contactApp.displayAllContacts();
+                    break;
+                }
+                case 2 :{
+                    System.out.println("Enter name you want to search: ");
+                    String name =  scanner.nextLine();
+                    contactApp.searchContact(name);
+                    break;
+                }
+                case 3 :{
+                    System.out.println("Enter name: ");
+                    String enterName = scanner.nextLine();
+                    System.out.println("Enter number: ");
+                    String enterNum = scanner.nextLine();
+                    contactApp.addNewContact(enterName,enterNum);
+                    break;
+                }
+                case 4:{
+                    contactApp.updateContact();
+                    break;
+                }
+                case 5:{
+                    System.out.println("Enter name: ");
+                    String delName = scanner.nextLine();
+                    contactApp.deleteContact(delName);
+                }
+                default:{
+                    System.out.println("Enter valid choice");
+                }
+            }
+        }
     }
 }

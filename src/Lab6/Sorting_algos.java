@@ -88,42 +88,19 @@ public class Sorting_algos {
         }
     }
 
-    public void BubbleSort2D(int[][] A){
+    public int[] convert( int[][] A){
 
-        int temp;
+        int k;
+
+        int[] arr = new int[A.length*3];
+
         for (int i = 0; i < A.length; i++) {
-            for (int j = 0; j < A[i].length - 1; j++) {
-                for (int k = 0; k < A[i].length - 1 - j; k++) {
-                    if (A[i][k] > A[i][k + 1]) {
-                        temp = A[i][k];
-                        A[i][k] = A[i][k + 1];
-                        A[i][k + 1] = temp;
-                    }
-                }
-
+            for (int j = 0; j < A[i].length; j++) {
+                k = (i * A.length) + j ;
+                arr[k]=A[i][j];
             }
         }
-        System.out.println(Arrays.deepToString(A));
-    }
 
-    public void SelectionSort2D(int[][] A){
-        int temp,min;
-
-        for (int i = 0; i < A.length ; i++) {
-            for (int j = i+1; j < A[i].length; j++) {
-                for (int k = 0; k < A.length-1 ; k++) {
-                    min=i;
-                    for (int l = k+1; l < A.length; l++) {
-                        if(A[i][j]<A[i][min]){
-                            min=j;
-                        }
-                    }
-                    temp=A[i][k];
-                    A[i][k]=A[i][min];
-                    A[i][min]=temp;
-                }
-            }
-        }
-        System.out.println(Arrays.toString(A));
+        return arr;
     }
 }
