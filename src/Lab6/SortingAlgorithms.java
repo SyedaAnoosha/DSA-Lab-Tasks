@@ -1,7 +1,7 @@
 package Lab6;
 import java.util.Arrays;
 
-public class Sorting_algos {
+public class SortingAlgorithms {
     public void SelectionSort1D(int[] A){
         int temp,min;
         for (int i = 0; i < A.length-1; i++) {
@@ -55,13 +55,10 @@ public class Sorting_algos {
                 count++;
             }
         }
-
         int pivIndex = count + low;
-
         int temp = A[pivIndex];
         A[pivIndex] = A[low];
         A[low] = temp;
-
         int s = low, e  = high;
 
         while(s < pivIndex && e > pivIndex){
@@ -77,7 +74,6 @@ public class Sorting_algos {
                 A[e] = loc;
             }
         }
-
         return pivIndex;
     }
     public void QuickSort1D(int[] A, int low, int high){
@@ -88,10 +84,9 @@ public class Sorting_algos {
         }
     }
 
-    public int[] convert( int[][] A){
+    public int[] convert( int[][] A ){
 
         int k;
-
         int[] arr = new int[A.length*3];
 
         for (int i = 0; i < A.length; i++) {
