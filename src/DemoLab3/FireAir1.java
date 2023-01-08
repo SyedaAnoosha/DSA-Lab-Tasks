@@ -1,7 +1,7 @@
-package Lab3;
+package DemoLab3;
 import java.util.Arrays;
 
-public class FireAir{
+public class FireAir1 {
     private String[] songs = {"Let Me Down Slowly","Shape of You","Anti-Hero","Sorry","Blank Space"};
     public void menu(){
         System.out.println("1. Display all songs\n2. Search a song \n3. Add a new song\n4. Update the song\n5. Delete any song\n6. Exit");

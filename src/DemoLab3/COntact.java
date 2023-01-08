@@ -1,4 +1,4 @@
-package Lab3;
+package DemoLab3;
 
 import java.util.Arrays;
 

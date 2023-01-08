@@ -1,4 +1,4 @@
-package Lab3;
+package DemoLab3;
 
 import java.util.Scanner;
 
@@ -6,7 +6,7 @@ public class Main1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int j;
-        FireAir f = new FireAir();
+        FireAir1 f = new FireAir1();
         while(true){
             f.menu();
             System.out.println("Enter the option: ");
