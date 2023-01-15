@@ -1,7 +1,5 @@
 package Lab7;
-
 import java.util.Scanner;
-
 class node1{
     String data;
     node1 next;
@@ -82,10 +80,20 @@ class FireAir{
 
     }
     public void deleteMiddle() {
+        node1 p = head;
+        node1 q = head;
+        node1 prev = null;
+        while (q != null && q.next != null) {
+            q= q.next.next;
+            prev=p;
+            p = p.next;
+        }
+        prev.next=p.next;
+
     }
     public boolean search(String data){
         for(node1 start = head; start != null ; start=start.next){
-            if(data.equals(start.data)) {
+            if(data.equalsIgnoreCase(start.data)) {
                 return true;
             }
         }
@@ -132,13 +140,13 @@ class FireAir{
                     sc.nextLine();
                     System.out.println("Enter song name: ");
                     String songEnd = sc.nextLine();
-                    insertAtStart(songEnd);
+                    insertAtEnd(songEnd);
                     menu();
                 } else if (y==3) {
                     sc.nextLine();
                     System.out.println("Enter song name: ");
                     String songMid = sc.nextLine();
-                    insertAtStart(songMid);
+                    insertAtMiddle(songMid);
                     menu();
                 }
             } else if (x==3) {
