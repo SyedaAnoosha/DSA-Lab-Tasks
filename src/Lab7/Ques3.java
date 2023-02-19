@@ -1,3 +1,4 @@
+/*
 package Lab7;
 class node <T>{
     T data;
@@ -204,3 +205,4 @@ public class Ques3 {
 
     }
 }
+*/
