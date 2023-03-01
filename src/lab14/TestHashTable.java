@@ -2,6 +2,15 @@ package lab14;
 
 import java.util.Scanner;
 
+
+// A Program for Testing HashTable:
+
+/*
+   A little program to test the HashTable class.  Note that I
+   start with a really small table so that I can easily test
+   the resize() method.
+*/
+
 public class TestHashTable {
 
     public static void main(String[] args){
