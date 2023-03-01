@@ -1,0 +1,66 @@
+package lab12;
+
+class BST{
+    Node root;
+
+    static class Node{
+        int val;
+        Node left, right;
+        public Node(int val){
+            this.val =val;
+        }
+    }
+
+    public void insert(int val){
+        root = insert(root, val);
+    }
+    public Node insert(Node root, int val) {
+        if (root == null) {
+            root = new Node(val);
+            return root;
+        }
+        if (val < root.val) {
+            root.left = insert(root.left, val);
+        } else {
+            root.right = insert(root.right, val);
+        }
+        return root;
+    }
+
+    public void inOrder(){
+        inOrder(root);
+    }
+    public void inOrder(Node root){
+        if (root==null){
+            return;
+        }
+        inOrder(root.left);
+        System.out.print(root.val + " ");
+        inOrder(root.right);
+    }
+}
+
+public class Question1 {
+    public static void main(String[] args) {
+
+        BST bst = new BST();
+
+        bst.insert(6);
+        bst.insert(8);
+        bst.insert(22);
+        bst.insert(3);
+        bst.insert(7);
+        bst.insert(5);
+        bst.insert(12);
+        bst.insert(10);
+        bst.insert(9);
+        bst.insert(20);
+        bst.insert(35);
+        bst.insert(40);
+        bst.insert(42);
+
+        bst.inOrder();
+
+    }
+
+}
