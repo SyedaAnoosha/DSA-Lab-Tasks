@@ -200,14 +200,20 @@ public class HashTable {
     }
 
     private void resize() {
-        // Double the size of the table, and redistribute the
-        // key/value pairs to their proper locations in the
-        // new table.
+        /*
+         Double the size of the table, and redistribute the
+         key/value pairs to their proper locations in the
+         new table.
+        */
         ListNode[] newtable = new ListNode[table.length*2];
         for (int i = 0; i < table.length; i++) {
-            // Move all the nodes in linked list number i into the new table.  No new ListNodes are created. The existing ListNode for each
-            // key/value pair is moved to the newtable. This is done by changing the "next" pointer in the node and by making a pointer in the
-            // new table point to the node.
+
+            /*
+             Move all the nodes in linked list number i into the new table.  No new ListNodes are created. The existing ListNode for each
+             key/value pair is moved to the newtable. This is done by changing the "next" pointer in the node and by making a pointer in the
+             new table point to the node.
+            */
+
             ListNode list = table[i]; // For traversing linked list number i.
             while (list != null) {
                 // Move the node pointed to by list to the new table.
